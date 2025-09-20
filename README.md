@@ -147,7 +147,4 @@ For Next Steps, while the recommended models (i.e., ``Model7`` etc.) can be depl
 
 Updated data should also provide a better indication on the latest features that consumers are looking for so that the Dealership can source these cars for their inventory.
 
-## License
-
-Open source projects are made available and contributed to under licenses that include terms that, for the protection of contributors, make clear that the projects are offered “as-is”, without warranty, and disclaiming liability for damages resulting from using the projects.
 
