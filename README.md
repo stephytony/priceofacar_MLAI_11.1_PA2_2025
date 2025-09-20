@@ -1,5 +1,7 @@
-# priceofacar
+# PRICE OF A CAR
 GitHub Repository for work done on Professional Certificate in Machine Learning and Artificial Intelligence - December 2022
+
+Link to Jupyter Notebook Link -> https://github.com/stephytony/priceofacar_MLAI_11.1_PA2_2025/blob/main/prompt_price_of_a_car.ipynb 
 
 # Practical Application Assignment 11.1: What Drives the Price of a Car?
 
