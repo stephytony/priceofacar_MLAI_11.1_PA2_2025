@@ -42,7 +42,7 @@ Source - https://centricconsulting.com/blog/machine-learning-a-quick-introductio
 
 The first thing that was apparent from the provided data was that it was not clean, it had missing values and some of the values were not realistic for used cars, for example, odometer with zero and single digit values; price with zero and single digits values.
 
-![Box Plot of Price of vehicles vs Condition!](./images/decade_scatter.png)
+![Box Plot of Price of vehicles vs Condition!](./images/color.png)
 
 As you can see from the Diagram above, there are car prices with zero value for all conditions.
 
@@ -55,7 +55,7 @@ Summary of the Data Preparation is as follows:
 - Review and remove the other factors (i.e., state, paint color, manufacturer, transmission etc.) and check if they have an impact on car price based on the provided data
 - Filtering the data based on year on manufacture = 1990 as the number of vehicles before 1990 were very low
 
-![Histogram Plot of Used Cars by Year > 1990!](./images/price_year_trend.png)
+![Histogram Plot of Used Cars by Year > 1990!](./images/year_category.png)
 
 ## Regression Models
 
