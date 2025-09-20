@@ -24,7 +24,7 @@ This repository contains the Jupyter Notebook for the Application Assignment 11.
 The notebooks are grouped into the following categories:
  * ``data`` – vehicles.csv data file from Kaggle Machine Learning dataset repository used in the notebooks
  * ``images`` – Image files used in Notebook and Project Description
- * ``notebook`` – What Drives the Price of a Car Notebook
+ * ``primpt_price_of_a_car`` – What Drives the Price of a Car Notebook
 
 
 ## Business Understanding
@@ -33,7 +33,7 @@ The business objective is to identify key features for used car prices based on 
 
 For this application, we used a machine learning process which starts with gathering the data, cleaning, preparing and manipulating the data, training the model then testing to get predicted values and measure model accuracy. As part of the life cycle, additional data from sales should be used on an on-going bases to “improve” the model which leads to higher prediction accuracy on the factors that  consumers are looking for in used cars. 
 
-![Machine Learning Overview!](./images/Machine-Learning-Process-Overview.jpeg)
+![Machine Learning Overview!](./images/crisp.png)
 
 Source - https://centricconsulting.com/blog/machine-learning-a-quick-introduction-and-five-core-steps/
 
@@ -42,7 +42,7 @@ Source - https://centricconsulting.com/blog/machine-learning-a-quick-introductio
 
 The first thing that was apparent from the provided data was that it was not clean, it had missing values and some of the values were not realistic for used cars, for example, odometer with zero and single digit values; price with zero and single digits values.
 
-![Box Plot of Price of vehicles vs Condition!](./images/Box-Plot-of-Price-of-vehicles-vs-Condition.png)
+![Box Plot of Price of vehicles vs Condition!](./images/decade_scatter.png)
 
 As you can see from the Diagram above, there are car prices with zero value for all conditions.
 
@@ -55,7 +55,7 @@ Summary of the Data Preparation is as follows:
 - Review and remove the other factors (i.e., state, paint color, manufacturer, transmission etc.) and check if they have an impact on car price based on the provided data
 - Filtering the data based on year on manufacture = 1990 as the number of vehicles before 1990 were very low
 
-![Histogram Plot of Used Cars by Year > 1990!](./images/Histogram-Plot-of-Used-Cars-by-Year-greater-than-1990.png)
+![Histogram Plot of Used Cars by Year > 1990!](./images/price_year_trend.png)
 
 ## Regression Models
 
@@ -121,9 +121,7 @@ When we analyze the importance of feature selection based on the trained model, 
 
 ## Next Steps and Recommendations
 
-As the data provided is not that clean with null, NAN, zero, missing and unrealistic values, further filering of the data could be done, for example, selecting used car records with year => 2000. 
-
-![Histogram Plot of Used Cars by Year > 2000!](./images/Histogram-Plot-of-Used-Cars-by-Year-greater-than-2000.png)
+As the data provided is not that clean with null, NAN, zero, missing and unrealistic values, further filering of the data could be done, for example, selecting used car records with recent years.
 
 This should allow the model to use more of the newer car features like model, cylinders, drive, size which may have a greater influence on newer used car prices with lower odometer. This may also lead to a higher/better model accuracy (i.e., > 50%)
 
