@@ -100,23 +100,8 @@ In testing these models with the inputs, we observed the following for used car 
 | Model4      	| Car with Odometer of 100000                                                          	| 11,838.40                    	|
 |             	|                                                                                      	|                              	|
 
-As you can see, the Machine Learning application "Model" built using all the final dataset from the data manipulation phase which included features like Odometer, Year, Condition, fuel type, drive train and size returns a negative value (i.e., -$98,263.87) which is not realistic for a "new car with 100 miles, condition excellent and new with diesel and four wheel drive".
 
-Same Model returned $29,013.33 for new car with 100 miles, condition good and with Electric and front wheel drive.
-
-For ML Applications ``Model6`` and ``Model7`` which are the recommended/selected models, see below for the prediction testing results:
-
-| Test Description                                                         	| Predicted Used Car Price Model6	| Predicted Used Car Price Model7 ($)	|
-|:--------------------------------------------------------------------------	|:-------------------------------:	|:-------------------------------:	|
-| Car with Year of 1940, 100k Miles with Diesel Fuel, 4WD and Full Size    	| 38,785.04                      	| 39,107.49                      	|
-| Car with Year of 1990, 100k Miles with No Diesel Fuel, 4WD and Full Size 	| 22,417.60                      	| 22,569.71                      	|
-| Car with Year of 2020, 10k Miles with Diesel Fuel, 4WD and Full Size     	| 47,456.98                      	| 48,238.24                      	|
-| Car with Year of 2020, 10k Miles with No Diesel Fuel, 4WD and Full Size  	| 31,089.55                      	| 31,700.49                      	|
-|                                                                          	|                                 	|                                 	|
-
-With regards to high quality model based on the dataset provided, ``Model6`` and ``Model7`` are the recommended models.
-
-When we analyze the importance of feature selection based on the trained model, we observe the following order
+Based on the  model, we observe the following order
 - ``Model6`` - Diesel Fuel, Odometer, Four Wheel Drive, Full Size and Year
 - ``Model7`` - Diesel Fuel, Year, Odometer, Four Wheel Drive and Full Size
 
@@ -126,25 +111,4 @@ When we analyze the importance of feature selection based on the trained model, 
 As the data provided is not that clean with null, NAN, zero, missing and unrealistic values, further filering of the data could be done, for example, selecting used car records with recent years.
 
 This should allow the model to use more of the newer car features like model, cylinders, drive, size which may have a greater influence on newer used car prices with lower odometer. This may also lead to a higher/better model accuracy (i.e., > 50%)
-
-More and better data can be collected to train the model. This data should include the newer features on used cars like Automated Driving Safety Features, Infotainment, Cameras, Remote Start, Car Mileage which have an impact on used car prices.
-
-Additional Data on used car datasets can be downloaded from [Kaggle Used Cars Datasets](https://www.kaggle.com/search?q=used+cars)
-
-We would recommend some form of classification/categories for features like paint_color, state etc so that we can include them with fewer permutations in the model.
-
-From the current models created, ``Model6`` and ``Model7`` would be the recommended models to use.  
-
-These models were built with the following logic:
-- ``Model6`` - Odometer and Price greater than 5000, Odometer, Year, fuel_diesel, drive_4wd  and size_full-size as the only inputs
-- ``Model7`` - Odometer and Price greater than 5000, Odometer, Year > 1990, Year, fuel_diesel,  drive_4wd and size_full-size as the only inputs
-
-These models  provided the following model feature selection:
-- ``Model6`` - Diesel Fuel, Odometer, Four Wheel Drive, Full Size and Year
-- ``Model7`` - Diesel Fuel, Year, Odometer, Four Wheel Drive and Full Size
-
-For Next Steps, while the recommended models (i.e., ``Model7`` etc.) can be deployed, we would also recommend gathering more quality data that would produce a model with an accuracy of 75%+ based on used cars data no more than 10-15 years old.
-
-Updated data should also provide a better indication on the latest features that consumers are looking for so that the Dealership can source these cars for their inventory.
-
 
